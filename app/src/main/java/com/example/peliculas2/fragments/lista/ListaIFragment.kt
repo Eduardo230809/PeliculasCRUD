@@ -30,8 +30,8 @@ class ListaIFragment : Fragment() {
         viewModel =
             ViewModelProvider(this).get(idiomaViewModel::class.java)
         viewModel.lista.observe(viewLifecycleOwner, Observer
-        {user->
-            adapter.setData(user)
+        {idioma->
+            adapter.setData(idioma)
         })
         //Agregar el menu
         setHasOptionsMenu(true)

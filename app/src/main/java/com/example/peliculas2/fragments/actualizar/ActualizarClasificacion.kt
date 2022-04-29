@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.peliculas2.ActualizarCFragment
 import com.example.peliculas2.R
 import com.example.peliculas2.bd.entidades.ClasificacionEntity
 import com.example.peliculas2.bd.viewmodel.ClasificacionViewModel
@@ -44,7 +43,7 @@ class ActualizarClasificacion : Fragment()  {
         //Crear el objeto
         val clasificacion =
             ClasificacionEntity(args.currentClasificacion.idClasificacion,
-                nombre, abreviacion, activo = true)
+                nombre, abreviacion, true)
         //Actualizar
         viewModel.actualizarClasificacion(clasificacion)
         Toast.makeText(requireContext(), "Registro actualizado",

@@ -34,7 +34,7 @@ class NuevaClasificacion : Fragment() {
         val abreviacion = fBinding.TxtAbreviacion.text.toString()
 
             //Crear objeto
-            val clasificacion = ClasificacionEntity(0, nombre, abreviacion, activo = true)
+            val clasificacion = ClasificacionEntity(0, nombre, abreviacion, true)
             //Agregar nuevo usuario
             viewModel.agregarClasificacion(clasificacion)
             Toast.makeText(requireContext(), "Registro guardado",

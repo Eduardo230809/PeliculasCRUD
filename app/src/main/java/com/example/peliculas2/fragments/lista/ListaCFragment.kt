@@ -30,8 +30,8 @@ class ListaCFragment : Fragment() {
         viewModel =
             ViewModelProvider(this).get(ClasificacionViewModel::class.java)
         viewModel.lista.observe(viewLifecycleOwner, Observer
-        {user->
-            adapter.setData(user)
+        {clasificacion->
+            adapter.setData(clasificacion)
         })
         //Agregar el menu
         setHasOptionsMenu(true)
@@ -51,8 +51,7 @@ class ListaCFragment : Fragment() {
         }
     }
     override fun onCreateOptionsMenu(menu: Menu, inflater:
-    MenuInflater
-    ) {
+    MenuInflater) {
         inflater.inflate(R.menu.delete_menu, menu)
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean
@@ -83,4 +82,5 @@ class ListaCFragment : Fragment() {
         alerta.setMessage("¿Esta seguro de eliminar los registros?")
         alerta.create().show()
     }
+
 }

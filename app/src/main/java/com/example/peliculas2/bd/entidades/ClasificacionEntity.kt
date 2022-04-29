@@ -10,7 +10,7 @@ import kotlinx.android.parcel.Parcelize
 @Entity(tableName = "TblClasificacion")
 class ClasificacionEntity (
     @PrimaryKey(autoGenerate = true)
-    val idClasificacion: Int,
+    val idClasificacion: Int = 0,
     @ColumnInfo(name = "abreviacion")
     val abreviacion: String,
     @ColumnInfo(name = "nombre")

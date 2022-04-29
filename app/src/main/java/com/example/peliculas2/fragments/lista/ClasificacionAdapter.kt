@@ -10,25 +10,22 @@ import com.example.peliculas2.databinding.ListaClasificacionBinding
 
 class ClasificacionAdapter :
     RecyclerView.Adapter<ClasificacionAdapter.ClasificacionHolder>() {
-    private var listadoClasificacion = emptyList<ClasificacionEntity>()
+    var listadoClasificacion : List<ClasificacionEntity> = emptyList()
     override fun onCreateViewHolder(parent: ViewGroup, viewType:
     Int): ClasificacionHolder {
         val binding =
-
             ListaClasificacionBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent, false)
         return ClasificacionHolder(binding)
     }
-    override fun onBindViewHolder(holder: ClasificacionHolder,
-                                  position: Int) {
-        holder.bind(
-            listadoClasificacion[position]
-        )
-    }
+
+    override fun onBindViewHolder(holder: ClasificacionHolder, position: Int) : Unit =
+        holder.bind(listadoClasificacion[position])
+
     override fun getItemCount(): Int = listadoClasificacion.size
-    fun setData(users: List<ClasificacionEntity>) {
-        this.listadoClasificacion = users
+    fun setData(clasificacion: List<ClasificacionEntity>) {
+        this.listadoClasificacion = clasificacion
         notifyDataSetChanged()
     }
     inner class ClasificacionHolder(val binding: ListaClasificacionBinding)

@@ -13,7 +13,7 @@ interface MainDataBaseProvider {
 }
 @Database(
     entities = [ClasificacionEntity::class, IdiomaEntity::class],
-    version = 1
+    version = 2
 )
 abstract class MainBaseDatos : RoomDatabase(),
     MainDataBaseProvider {
@@ -29,7 +29,7 @@ abstract class MainBaseDatos : RoomDatabase(),
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         MainBaseDatos::class.java,
-                        "usuario_main_db"
+                        "main_db"
                     ).fallbackToDestructiveMigration().build()
                     INSTANCE = instance
                 }
