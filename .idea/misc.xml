@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/eduardo gomez/AndroidStudioProjects/Peliculas22/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/eduardo gomez/AndroidStudioProjects/Peliculas22/app/src/main/res/layout/fragment_actualizar_c.xml" value="0.25" />
+        <entry key="..\:/Users/eduardo gomez/AndroidStudioProjects/Peliculas22/app/src/main/res/layout/fragment_actualizar_i.xml" value="0.25" />
+        <entry key="..\:/Users/eduardo gomez/AndroidStudioProjects/Peliculas22/app/src/main/res/layout/fragment_inicio.xml" value="0.2509057971014493" />
+        <entry key="..\:/Users/eduardo gomez/AndroidStudioProjects/Peliculas22/app/src/main/res/layout/fragment_lista_c.xml" value="0.25" />
+        <entry key="..\:/Users/eduardo gomez/AndroidStudioProjects/Peliculas22/app/src/main/res/layout/fragment_lista_i.xml" value="0.25" />
+        <entry key="..\:/Users/eduardo gomez/AndroidStudioProjects/Peliculas22/app/src/main/res/layout/fragment_nueva_clasificacion.xml" value="0.25" />
+        <entry key="..\:/Users/eduardo gomez/AndroidStudioProjects/Peliculas22/app/src/main/res/layout/fragment_nuevo_idioma.xml" value="0.25" />
+        <entry key="..\:/Users/eduardo gomez/AndroidStudioProjects/Peliculas22/app/src/main/res/layout/lista_clasificacion.xml" value="0.25" />
+        <entry key="..\:/Users/eduardo gomez/AndroidStudioProjects/Peliculas22/app/src/main/res/layout/lista_idioma.xml" value="0.25" />
+        <entry key="..\:/Users/eduardo gomez/AndroidStudioProjects/Peliculas22/app/src/main/res/menu/delete_menu.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

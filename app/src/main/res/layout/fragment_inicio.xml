@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioFragment">
+
+    <Button
+        android:id="@+id/btnIdioma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="Idioma"
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/btnClasificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="Clasificacion"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestion de Peliculas"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+
+</FrameLayout>

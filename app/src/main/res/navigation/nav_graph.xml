@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.peliculas2.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/irA_listaCFragment"
+            app:destination="@id/listaCFragment" />
+        <action
+            android:id="@+id/irA_listaIFragment"
+            app:destination="@id/listaIFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actualizarCFragment"
+        android:name="com.example.peliculas2.fragments.actualizar.ActualizarClasificacion"
+        android:label="fragment_actualizar_c"
+        tools:layout="@layout/fragment_actualizar_c" >
+        <action
+            android:id="@+id/actualizar_ListaClasificacion"
+            app:destination="@id/listaCFragment" />
+        <argument
+            android:name="currentClasificacion"
+            app:argType="com.example.peliculas2.bd.entidades.ClasificacionEntity" />
+    </fragment>
+    <fragment
+        android:id="@+id/actualizarIFragment"
+        android:name="com.example.peliculas2.fragments.actualizar.ActualizarIdioma"
+        android:label="fragment_actualizar_i"
+        tools:layout="@layout/fragment_actualizar_i" >
+        <action
+            android:id="@+id/actualizar_ListaIdioma"
+            app:destination="@id/listaIFragment" />
+        <argument android:name="currentIdioma"
+            app:argType="com.example.peliculas2.bd.entidades.IdiomaEntity" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaCFragment"
+        android:name="com.example.peliculas2.fragments.lista.ListaCFragment"
+        android:label="fragment_lista_c"
+        tools:layout="@layout/fragment_lista_c" >
+
+        <action
+            android:id="@+id/nueva_Clasificacion"
+            app:destination="@id/nuevaClasificacion" />
+        <action
+            android:id="@+id/listaC_Actualizar"
+            app:destination="@id/actualizarCFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/listaIFragment"
+        android:name="com.example.peliculas2.fragments.lista.ListaIFragment"
+        android:label="fragment_lista_i"
+        tools:layout="@layout/fragment_lista_i" >
+        <action
+            android:id="@+id/nuevo_Idioma"
+            app:destination="@id/nuevoIdioma" />
+        <action
+            android:id="@+id/listaI_Actualizar"
+            app:destination="@id/actualizarIFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nuevaClasificacion"
+        android:name="com.example.peliculas2.fragments.agregar.NuevaClasificacion"
+        android:label="fragment_nueva_clasificacion"
+        tools:layout="@layout/fragment_nueva_clasificacion" >
+        <action
+            android:id="@+id/ir_listaC"
+            app:destination="@id/listaCFragment" />
+        <action
+            android:id="@+id/lista_ActualizarC"
+            app:destination="@id/actualizarCFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nuevoIdioma"
+        android:name="com.example.peliculas2.fragments.agregar.NuevoIdioma"
+        android:label="fragment_nuevo_idioma"
+        tools:layout="@layout/fragment_nuevo_idioma" >
+        <action
+            android:id="@+id/irListaI"
+            app:destination="@id/listaIFragment" />
+        <action
+            android:id="@+id/lista_ActualizarI"
+            app:destination="@id/actualizarIFragment" />
+    </fragment>
+</navigation>
